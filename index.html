@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soil Assessment Recommendations</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Soil Assessment Recommendations</h1>
+    <form id="soilForm">
+      <label for="soilTexture">Soil Texture:</label>
+      <select id="soilTexture">
+        <option value="sandy">Sandy</option>
+        <option value="silty">Silty</option>
+        <option value="clay">Clay</option>
+      </select>
+
+      <label for="soilStructure">Soil Structure:</label>
+      <select id="soilStructure">
+        <option value="wellAggregated">Well Aggregated</option>
+        <option value="poorlyAggregated">Poorly Aggregated</option>
+      </select>
+
+      <label for="soilPH">Soil pH:</label>
+      <select id="soilPH">
+        <option value="acidic">Acidic (pH less than 6)</option>
+        <option value="neutral">Neutral (pH 6 to 7)</option>
+        <option value="alkaline">Alkaline (pH greater than 7)</option>
+      </select>
+
+      <label for="soilMoisture">Soil Moisture:</label>
+      <select id="soilMoisture">
+        <option value="dry">Dry</option>
+        <option value="moderatelyMoist">Moderately Moist</option>
+        <option value="waterLogged">Waterlogged</option>
+      </select>
+
+      <label for="organicMatter">Organic Matter Content:</label>
+      <select id="organicMatter">
+        <option value="low">Low</option>
+        <option value="moderate">Moderate</option>
+        <option value="high">High</option>
+      </select>
+
+      <label for="nutrientLevels">Nurtrient Levels:</label>
+      <select id="nutrientLevels">
+        <option value="low">Low</option>
+        <option value="moderate">Moderate</option>
+        <option value="high">High</option>
+      </select>
+
+      <label for="cec">Cation Exchange Capacity (CEC):</label>
+      <select id="cec">
+        <option value="low">Low</option>
+        <option value="moderate">Moderate</option>
+        <option value="high">High</option>
+      </select>
+
+      <label for="microbialActivity">Microbial Activity:</label>
+      <select id="microbialActivity">
+        <option value="low">Low</option>
+        <option value="moderate">Moderate</option>
+        <option value="high">High</option>
+      </select>
+
+      <label for="salinity">Salinity:</label>
+      <select id="salinity">
+        <option value="low">Low</option>
+        <option value="moderate">Moderate</option>
+        <option value="high">High</option>
+      </select>
+
+      <label for="heavyMetals">Heavy Metals and Contaminants</label>
+      <select id="heavyMetals">
+        <option value="low">Low</option>
+        <option value="moderate">Moderate</option>
+        <option value="high">High</option>
+      </select>
+
+      <label for="soilColor">Soil Color:</label>
+      <select id="soilColor">
+        <option value="dark">Dark</option>
+        <option value="yellowRed">Red or Yellow</option>
+        <option value="light">Light</option>
+      </select>
+
+      <label for="soilDepth">Soil Depth:</label>
+      <select id="soilDepth">
+        <option value="shallow">Shallow</option>
+        <option value="moderate">Moderate</option>
+        <option value="deep">Deep</option>
+      </select>
+
+      <!--Switch to #id and .addEventListener-->
+      <button type="button" onclick="generateRecommendations()">Get Recommendations</button>
+    </form>
+    <div id="recommendations"></div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
